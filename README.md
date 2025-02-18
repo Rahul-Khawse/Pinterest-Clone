@@ -1,4 +1,4 @@
-﻿## Pinterest-Clone
+# Pinterest-Clone
 
 A Pinterest clone website is a social platform that allows users to visually discover, collect, 
 
@@ -23,4 +23,6 @@ and more, similar to the functionality of the original Pinterest platform.
 
 5. Repinning: Users can re-pin content from other users to their own boards 
 
-6. Personal profile management: Users can customize their profile with a bio, avatar, and privacy settings 
+6. Personal profile management: Users can customize their profile with a bio, avatar,
+
+    and privacy settings 
