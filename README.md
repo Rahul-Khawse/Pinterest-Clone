@@ -1,14 +1,19 @@
 ﻿## Pinterest-Clone
 
 A Pinterest clone website is a social platform that allows users to visually discover, collect, 
+
 and share images and ideas by "pinning" them to themed boards, enabling people to organize their 
+
 interests and inspiration across various categories like fashion, home decor, recipes, travel, 
+
 and more, similar to the functionality of the original Pinterest platform. 
 
 
 ## Key features of a Pinterest clone:
 
-1. Pin creation: Users can upload images, add descriptions, and categorize them with relevant keywords to create "pins."
+1. Pin creation: Users can upload images, add descriptions, and categorize them with relevant
+  
+   keywords to create "pins."
    
 2. Board creation: Users can create themed boards to group related pins together.
    
