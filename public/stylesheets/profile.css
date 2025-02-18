@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    color: #020202;
+    font-family: "Poppins", sans-serif;
+    background: hsla(141, 54%, 86%, 1);
+
+
+    background: -moz-linear-gradient(to right,
+            hsla(141, 54%, 86%, 1) 0%,
+            hsla(333, 73%, 85%, 1) 50%,
+            hsla(211, 58%, 79%, 1) 100%);
+
+    background: -webkit-linear-gradient(to right,
+            hsla(141, 54%, 86%, 1) 0%,
+            hsla(333, 73%, 85%, 1) 50%,
+            hsla(211, 58%, 79%, 1) 100%);
+            
+    background: linear-gradient(to right,
+            hsla(141, 54%, 86%, 1) 0%,
+            hsla(333, 73%, 85%, 1) 50%,
+            hsla(211, 58%, 79%, 1) 100%);
+}
+
+.profile{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Red Rose', cursive; */
+    /* background-color: #505050; */
+} 
+
+.procard {
+    background-color: transparent;
+    width: 550px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    margin: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px ;
+}
+
+.img{
+    position: relative;
+}
+
+.img span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #343434;
+    color: white;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.img span:hover{
+    background-color: #3b1fc8;
+    cursor: pointer;
+}
+
+.procard img {
+    width: 80px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: #404040 0px 0px 8px 0px;
+}
+
+.procard .details {
+    margin: 10px;
+}
+
+.procard .details h2 {
+    font-weight: 600;
+}
+
+.procard .details p {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+a {
+    background-color: #c81f1f;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+.flex-container {
+    display: flex;
+    column-gap: 45px;
+    row-gap: 25px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.col {
+    width: 21%;
+}
+
+.card {
+    border: 1px solid #cbcbcb;
+    border-radius: 15px;
+    padding: 12px;
+    background-color: transparent;
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    -moz-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transform: scale(1.3);
+}
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+.img-placeholder {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shaow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+}
+
+.title{
+    margin: 10px 0;
+}
+
+.title h3{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.links{
+    margin: 20px;
+}
+
+.edit{
+    background-color: rgb(81, 0, 255);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+
+.pinn{
+    background-color: rgb(21, 155, 0);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+h3 {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+p {
+    font-weight: 300;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.shadow {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right,
+            hsla(141, 54%, 86%, 1) 0%,
+            hsla(333, 73%, 85%, 1) 50%,
+            hsla(211, 58%, 79%, 1) 100%);
+    position: absolute;
+    bottom: 0;
+}
+

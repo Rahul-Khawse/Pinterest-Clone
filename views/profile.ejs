@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="profile">
+
+      <div class="procard">
+        <div class="img">
+          <img src="/images/uploads/<%= user.dp %>">
+          <span id="uploadicon"><i class="ri-pencil-fill"></i></span>
+        </div>
+
+        <form hidden action="/fileupload" id="uploadform" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" id="image">
+        </form>
+
+        <div class="details">
+            <h2>@<%= user.username %></h2>
+            <p><%= user.fullname %></p>
+        </div>
+
+        <p id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua.
+        </p>
+
+        <div class="links">
+          <a href="/feed" class="edit">Feed</a>
+          <a href="/add" class="pinn">Create New Pin</a>
+          <a href="/logout">Logout</a>
+        </div>
+
+        <!-- <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="text" name="posttext" placeholder="caption">
+            <input type="file" name="file" id="image">
+            <input type="submit" value="Upload">
+        </form> -->
+      </div>
+    </div>
+
+    <div class="flex-container">
+        <!-- Card 1 -->
+        <% user.posts.forEach(function(post){ %>
+          <div class="col card">
+            <div class="img-placeholder">
+              <img src="/images/uploads/<%= post.image %>">
+            </div>
+            <div class="title">
+              <h3> <%= post.posttext %> </h3>
+            </div>
+          </div>
+        <% }) %>
+    </div>
+
+    <script>
+      document.querySelector("#uploadicon").addEventListener("click", function(){
+        document.querySelector("#uploadform input").click();  
+      })
+
+      document.querySelector("#uploadform input").addEventListener("change", function(){   
+        document.querySelector("#uploadform").submit();   
+      })
+    </script>
+
+</body>
+
+</html>
